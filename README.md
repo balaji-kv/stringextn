@@ -41,14 +41,14 @@ contains_any("hello world", ["world", "foo"])   # True
 contains_all("hello world", ["hello", "world"]) # True
 
 # Fuzzy string matching
-similarity("kitten", "sitting")  # 0.571
+similarity("kitten", "sitting")  # 0.615
 
 # Multi-replace
 multi_replace("abc abc abc", {"a": "X", "b": "Y"})  # "XYc XYc XYc"
 
 # Privacy masking
 mask_email("user@example.com")  # "u***@example.com"
-mask_phone("5551234567")        # "****1234"
+mask_phone("5551234567")        # "****4567"
 
 # URL-safe slugs
 slugify("Hello, World! ✨")  # "hello-world"
@@ -142,5 +142,4 @@ Contributions are welcome. Please ensure all tests pass and add tests for new fu
 
 ---
 
-**Package**: stringextn v1.0.0  
 **GitHub**: [stringextn](https://github.com/balaji-kv/stringextn)
